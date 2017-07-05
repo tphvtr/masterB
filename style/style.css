@@ -3,6 +3,7 @@ body{
 	font-family: arial;
 	margin: 0 auto;
 	min-width: 304px;
+	position: relative;
 }
 a{
 	text-decoration: none;
@@ -13,6 +14,7 @@ img{
 .wrap{
 	margin: 0 8px;
 	min-width: 304px;
+	position: relative;
 }
 .logo{
 	display: block;
@@ -90,4 +92,89 @@ img{
 iframe{
 	border: 0;
 	min-width: 304px;
+}
+.main_descr{
+	font-size: 14px;
+}
+.descr_date{
+	font-size: 10px;
+	font-style: italic;
+}
+.normal_text{
+	font-style: normal;
+	font-size: 12px;
+	text-align: center;
+}
+.form_heading{
+	font-weight: lighter;
+	text-align: center;
+}
+.search{
+	border: 1px solid #737373;
+	padding: 8px;
+}
+.wrap_get{
+	display: flex;
+	justify-content: center;
+	margin: 32px 0;
+}
+.main_btn{
+	padding: 9px 12px;
+	background-color: #ff3333;
+	color: #fff;
+	border: 0;
+	width: auto;
+	text-transform: uppercase;
+}
+.functional_features{
+	background-color: #f6f4f5;
+	padding: 16px 0;
+}
+.functional_text{
+	text-align: center;
+	font-size: 24px;
+	font-weight: lighter;
+}
+.features_block{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.img_wrap{
+	position: relative;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	background-color: #ffb500;
+}
+.features_block img{
+	width: 80%;
+}
+.features_block h5{
+	font-weight: lighter;
+	text-align: center;
+}
+.blue{
+	background-color: #002381;
+}
+.cyan{
+	background-color: #00b1b1;
+}
+.light_fio{
+	background-color: #616bbd;
+}
+.fio{
+	background-color: #780859;
+}
+.green{
+	background-color: #64c321;
+}
+.red{
+	background-color: #ff3333;
+}
+.more_btn{
+	border: 1px solid #ccc;
+	background-color: initial;
+	padding: 8px 16px;
 }
