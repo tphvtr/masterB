@@ -12,9 +12,12 @@ img{
 	width: 100%;
 }
 .wrap{
-	margin: 0 8px;
+	margin: 0;
 	min-width: 304px;
 	position: relative;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
 }
 .logo{
 	display: block;
@@ -50,12 +53,18 @@ img{
 	border-bottom: 2px solid #ff3333;
 	margin-bottom: -2px;
 }
+.contact_wrap{
+	display: flex;
+	flex-direction: column;
+}
 .contact{
 	font-size: 12px;
 	color: #000;
 	height: 40px;
-	display: block;
-	margin: 16px auto;
+	margin: 16px 0;
+	align-self: center;
+	width: 254px;
+	text-align: right;
 }
 .contact:before{
 	content: '';
@@ -73,9 +82,14 @@ img{
 	font-size: 24px;
 }
 .logo_small{
-	display: block;
+	display: flex;
 	background-color: #f6f3f0;
-	padding: 72px;
+	padding: 48px 0;
+	justify-content: center;
+}
+.logo_small img{
+	max-width: 304px;
+	max-height: 128px;
 }
 .country_choose{
 	font-size: 32px;
@@ -89,12 +103,15 @@ img{
 	font-family: 'Ropa Sans', sans-serif;
 	font-weight: lighter;
 }
-iframe{
+video{
 	border: 0;
-	min-width: 304px;
+	margin: 32px auto;
+	width: 100%;
+	max-width: 640px;
 }
 .main_descr{
 	font-size: 14px;
+	max-width: 360px;
 }
 .descr_date{
 	font-size: 10px;
@@ -191,4 +208,245 @@ iframe{
 	border: 1px solid #ccc;
 	background-color: initial;
 	padding: 8px 16px;
+}
+.features_text{
+	text-align: center;
+	font-weight: lighter;
+	font-size: 24px;
+}
+.features_wrap{
+	max-width: 508px;
+	align-self: flex-end;
+	padding:0 16px;
+}
+.feature_wrap:before{
+	content: '';
+	display: block;
+	background-image: url(../images/pin.png);
+	background-size: 100%;
+}
+.wrap_bg_img{
+	background-image: url(../images/paper_pen.png);
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-size: 80px;
+	margin: 16px 0;
+}
+.wrap_bg_img:before{
+	content: '';
+	display: block;
+	background-image: url(../images/red_glasses.png);
+	width: 65px;
+	height: 65px;
+ 	background-size: 100%;
+ 	position: absolute;
+ 	right: 0;
+ 	top: -4px;
+}
+.features_wrap h3{
+	font-size: 20px;
+}
+.finance_wrap h3{
+	font-size: 20px;
+}
+.finance_wrap h4 {
+	font-size: 14px;
+}
+.finance_wrap{
+	padding-left: 16px;
+	margin: 0;
+	max-width: 608px;
+	align-self: center;
+	background-image: url(../images/pin.png);
+	background-repeat: no-repeat;
+	background-size: 55px;
+	background-position: bottom right;
+	margin-right: 24px;
+	overflow: hidden;
+}
+.finance_wrap:after{
+	display: block;
+	content: '';
+	background-image: url(../images/flower.png);
+	background-size: 100%;
+	width: 85px;
+	height: 85px;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0;
+}
+.finance_wrap:before{
+	display: block;
+	content: '';
+	background-image: url(../images/calc.png);
+	background-size: contain;
+	width: 100px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-position: right;
+	position: absolute;
+	right: 0;
+}
+.finance_ul{
+	list-style-type: none;
+	padding: 0;
+}
+.feedback{
+	text-align: center;
+	font-weight: lighter;
+	font-size: 24px;
+}
+.wrap_video{
+	margin: 64px 0;
+}
+.wrap_video video{
+	max-width: 320px;
+}
+.country_wrap{
+	margin: 16px 0;
+}
+.country_wrap:after{
+	content: '';
+	display: block;
+	background-image: url(../images/map.png);
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+	width: 224px;
+	height: 224px;
+	position: absolute;
+	right: 0;
+}
+.clients_count{
+	font-size: 60px;
+	position: relative;
+	font-weight: bolder;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+.clients_count:before{
+	content: 'Кількість клієнтів: ';
+	display: block;
+	font-size: 24px;
+	font-weight: lighter;
+	float: left;
+	margin-right: 24px;
+
+}
+.claims_get{
+	font-size: 60px;
+	position: relative;
+	font-weight: bolder;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+.claims_get:before{
+	content: 'Отримано заявок: ';
+	display: block;
+	font-size: 24px;
+	font-weight: lighter;
+	float: left;
+	margin-right: 24px;
+	height: 69px;
+	display: flex;
+	align-items: center;
+	border-top: 2px solid #ff3333;
+	margin-left: 2px;
+}
+.country_wrap span{
+	padding:0 4px;
+	font-size: 14px;
+}
+.tariffs_text{
+	text-align: center;
+	font-weight: lighter;
+	margin: 64px 0 0;
+}
+.tariffs_block{
+	height: 480px;
+	max-width: 148px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border: 1px dashed #ccc;
+	margin: 16px;
+	padding: 48px 64px;
+}
+.tariffs_block h2{
+	margin: 0;
+	font-weight: bolder;
+	font-size: 65px;
+}
+.tariffs_block span{
+	font-size: 26px;
+}
+.tariffs_block p{
+	font-size: 18px;
+}
+.buy_btn{
+	text-align: center;
+	text-transform: uppercase;
+	border: 1px solid #ccc;
+	font-size: 18px;
+	font-weight: lighter;
+	padding: 8px 24px;
+	position: relative;
+	bottom: -248px;
+	z-index: 2;
+}
+.tariffs_block_small:after{
+	content: '';
+	display: block;
+	background-image: url(../images/folder_s.png);
+	width: 54px;
+	height: 240px;
+	background-repeat: no-repeat;
+	position: relative;
+	bottom: -84px;
+}
+.tariffs_block_medium:after{
+	content: '';
+	display: block;
+	background-image: url(../images/folder_m.png);
+	width: 174px;
+	height: 246px;
+	background-repeat: no-repeat;
+	position: relative;
+	bottom: -82px;
+}
+.tariffs_block_large:after{
+	content: '';
+	display: block;
+	background-image: url(../images/folder_l.png);
+	width: 252px;
+	height: 268px;
+	background-repeat: no-repeat;
+	position: relative;
+	bottom: -58px;
+}
+.cost{
+	width: 180px;
+	text-align: center;
+}
+.wrap_text_consulting{
+	background-color: #f6f3f0;
+}
+.text_consulting ~ button{
+	font-size: 20px;
+	padding: 16px 32px;
+	margin: 16px auto;
+}
+.text_consulting h2{
+	font-size: 24px;
+	font-weight: lighter;
+	text-align: center;
+}
+.text_consulting span{
+	font-size: 14px;
+	display: block;
+	text-align: center;
 }
