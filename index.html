@@ -25,14 +25,14 @@
 		</div>
 		</a>
 	</header>
-	 <div class="wrap">
+	 <div class="wrap country_choose_wrap">
 	 	<div class="country_choose">Країна обирає</div>
 	 	<div class="logo_small">
 	 		<img src="images/logo_small.png" alt="logo">
 	 	</div>
 	 </div>
 	 <div class="wrap wrap_main_video">
-	 	<video controls="controls" poster="images/video_poster.png">
+	 	<video class="main_video" controls="controls" poster="images/video_poster.png">
 	 		<source src="video/1.mp4">
 	 	</video>
 	 	<div class="text_wrap">
@@ -44,9 +44,9 @@
 	 </div>
 	 <div class="wrap">
 	 	<h3 class="form_heading">30 днів безкоштовної консультації</h3>
-	 	<p class="descr_date normal_text">+ консультації по перенесенню бухгалтерії</p>
+	 	<p class="normal_text">+ консультації по перенесенню бухгалтерії</p>
 	 	<form class="wrap_get">
-			<input class="search" placeholder="E-mail">
+			<input class="search" type="E-mail" placeholder="E-mail">
 			<button type="submit" class="main_btn">Отримати</button>
 		</form>
 	 </div>
@@ -133,12 +133,15 @@
 	 	</video>
 	 </div>
 	 <div class="wrap country_wrap">
-	 	<p id="clients_count" class="clients_count">980</p>
-	 	<p id="claims_get" class="claims_get">1780</p>
-	 	<span>(за останні 30 днів)</span>
+	 	<div class="info_wrap">
+		 	<p id="clients_count" class="clients_count">980</p>
+		 	<p id="claims_get" class="claims_get">1780</p>
+		 	<span>(за останні 30 днів)</span>
+	 	</div>
+	 	<img class="img_map" src="images/map.png" alt="Ukraine">
 	 </div>
 	 <h3 class="tariffs_text">Тарифні плани</h3>
-	 <div class="wrap">
+	 <div class="wrap tariffs_wrap">
 	 	<article class="tariffs_block tariffs_block_small">
 	 		<h2>S</h2>
 	 		<span>Тариф</span>
@@ -166,26 +169,29 @@
 	 	<button type="submit" class="main_btn">Отримати</button>
 	 </div>
 	 <div class="wrap know_more_wrap">
-	 	<h3>Запитання та відповіді</h3>
-	 	<span>Запитання:</span>
-	 		<p class="question">
-	 			Чи є можливість в одній базі вести облік декількох організацій, використовуючи загальні довідники?
-	 		</p>
-	 	<span>Відповідь:</span>
-	 		<p class="answer">
-				В системі реалізована можливість в одній базі вести облік декількох організацій, використовуючи загальні для всіх організацій довідники контрагентів, фінансових та ін. аналітик, підрозділів, проектів, номенклатури та ін. Організації/об'єкти, котрі таким чином ведуться в системі не обов'язково повинні бути об'єднані юридично в холдинг чи концерн. Функціонують кейси, коли частина даних, до прикладу в плані рахунків це субрахунки, використовується для всіх організацій-об'єктів, а частина лише для вибраних.
-			</p>
-		<span>Запитання:</span>	
-			<p class="question">
-				Чи є можливість самостійного доопрацювання окремих процесів (довідників, документів, звітів тощо, а можливо і цілих модулів), або створювати свої, та пов'язувати їх з іншими рішеннями продукту?
-			</p>
-		<span>Відповідь:</span>
-			<p class="answer">
-				Система – відкрита, що дає можливість Замовникам самостійно доопрацювати окремі процеси. В процесі впровадження спеціалісти команди IT-Enterprise здійснюють підготовку центру компетенції в складі команди
-			</p>
-		<button type="submit" class="know_more_btn">Дізнатися більше</button>
+	 	<div class="know_more_wrap_text">
+	 		<h3>Запитання та відповіді</h3>
+	 		<span>Запитання:</span>
+	 			<p class="question">
+	 				Чи є можливість в одній базі вести облік декількох організацій, використовуючи загальні довідники?
+	 			</p>
+	 		<span>Відповідь:</span>
+	 			<p class="answer">
+					В системі реалізована можливість в одній базі вести облік декількох організацій, використовуючи загальні для всіх організацій довідники контрагентів, фінансових та ін. аналітик, підрозділів, проектів, номенклатури та ін. Організації/об'єкти, котрі таким чином ведуться в системі не обов'язково повинні бути об'єднані юридично в холдинг чи концерн. Функціонують кейси, коли частина даних, до прикладу в плані рахунків це субрахунки, використовується для всіх організацій-об'єктів, а частина лише для вибраних.
+				</p>
+			<span>Запитання:</span>	
+				<p class="question">
+					Чи є можливість самостійного доопрацювання окремих процесів (довідників, документів, звітів тощо, а можливо і цілих модулів), або створювати свої, та пов'язувати їх з іншими рішеннями продукту?
+				</p>
+			<span>Відповідь:</span>
+				<p class="answer">
+					Система – відкрита, що дає можливість Замовникам самостійно доопрацювати окремі процеси. В процесі впровадження спеціалісти команди IT-Enterprise здійснюють підготовку центру компетенції в складі команди
+				</p>
+			<button type="submit" class="know_more_btn">Дізнатися більше	</button>
+		</div>
 	 </div>
 	 <footer>
+	 	<div class="wrap_nav_copyright">
 	 	<nav>
 	 		<ul class="footer_menu">
 	 			<li><a href="#">Стати партнером</a></li>
@@ -194,6 +200,8 @@
 	 			<li><a href="#">Наші клієнти</a></li>
 	 		</ul>
 	 	</nav>
+	 	<p class="copyright">&copy; 2017. Master Бухгалтерія. Всі права захищено</p>
+	 	</div>		
 	 	<div class="social_media-contacts_wrap">
 	 		<div class="social_media">
 	 			<a href="#">
@@ -208,7 +216,6 @@
 	 			<a href="tel:+380448008008">Тел: +38 044 800 80 08</a>
 	 		</p>
 	 	</div>
-	 	<p class="copyright">&copy; 2017. Master Бухгалтерія. Всі права захищено</p>
 	 </footer>
 </body>
 </html>
