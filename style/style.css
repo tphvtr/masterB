@@ -1,7 +1,11 @@
 *{
 	box-sizing: border-box;
 }
+html{
+	height: 100%;
+}
 body{
+	height: 100%;
 	background-color: #fff;
 	font-family: arial;
 	margin: 0 auto;
@@ -483,6 +487,13 @@ video{
 	padding: 8px 40px 24px 64px;
 	margin: 0 auto;
 }
+.know_more_btn:hover{
+	border: 1px solid #ccc;
+	color: #ccc;
+}
+.main_btn:hover{
+	background-color: #e50404;
+}
 .know_more_btn:before{
 	content: '+';
 	display: block;
@@ -577,6 +588,9 @@ footer{
 .footer_menu li:hover{
 	border-bottom: 2px solid #ff3333;
 	margin-bottom: -2px;
+}
+button:hover{
+	cursor: pointer;
 }
 
 @media (min-width: 960px) {
