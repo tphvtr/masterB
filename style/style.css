@@ -81,6 +81,11 @@ img{
 	display: block;
 	font-size: 24px;
 }
+.update_list{
+	text-decoration: underline;
+	color: #ff3333;
+	font-size: 14px;
+}
 .logo_small{
 	display: flex;
 	background-color: #f6f3f0;
@@ -373,7 +378,7 @@ video{
 	align-items: center;
 	flex-direction: column;
 	border: 1px dashed #ccc;
-	margin: 16px;
+	margin: 16px auto;
 	padding: 48px 64px;
 }
 .tariffs_block h2{
@@ -449,4 +454,120 @@ video{
 	font-size: 14px;
 	display: block;
 	text-align: center;
+}
+.know_more_wrap:after{
+	display: block;
+	content: '';
+	background-image: url(../images/stacked_folders.png);
+	background-size: contain;
+	position: absolute;
+	background-position: right;
+	right: 0;
+	bottom: 16px;
+	z-index: -1;
+	width: 75px;
+	height: 75px;
+	background-repeat: no-repeat;
+}
+.know_more_btn{
+	border: 1px solid #000;
+	background-color: initial;
+	font-size: 14px;
+	padding: 8px 40px 24px 64px;
+	margin: 0 auto;
+}
+.know_more_btn:before{
+	content: '+';
+	display: block;
+	width: 15px;
+	height: 15px;
+	font-weight: bold;
+	font-size: 32px;
+	position: relative;
+	z-index: 2;
+	left: -24px;
+	top: -2px;
+}
+.know_more_wrap h3{
+	text-align: center;
+	font-weight: lighter;
+}
+.know_more_wrap p{
+	margin: 2px 0 16px;
+	padding-left: 8px;
+}
+.know_more_wrap span{
+	font-size: 12px;
+	padding-left: 8px;
+}
+.answer{
+	font-size: 12px;
+}
+.question{
+	font-size: 15px;
+}
+footer{
+	background-color: #f6f3f0;
+	padding: 16px 8px;
+	margin: 32px 0 0;
+}
+.footer_menu{
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 0;
+	font-size: 12px;
+}
+.footer_menu a{
+	color: #000;
+}
+.social_media{
+	display: flex;
+	justify-content: center;
+	margin: 8px 0;
+}
+.social_media a{
+	width: 30px;
+	height: 30px;
+	border-right: 50%;
+	margin: 0 8px;
+}
+.utube:before{
+	content: '';
+	display: block;
+	background-image: url(../images/utube.png);
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.fb:before{
+	content: '';
+	display: block;
+	background-image: url(../images/fb.png);
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.copyright{
+	font-size: 12px;
+	text-align: center;
+}
+.contacts_text{
+	font-size: 12px;
+	margin: 0;
+	text-align: center;
+}
+.contacts_text a{
+	color: #000;
+	text-transform: none;
+}
+.social_media a:hover{
+	position: relative;
+	top: -2px;
+}
+.footer_menu li:hover{
+	border-bottom: 2px solid #ff3333;
+	margin-bottom: -2px;
 }
