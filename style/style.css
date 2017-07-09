@@ -535,7 +535,7 @@ video{
 	font-size: 15px;
 }
 footer{
-	background-color: #f6f3f0;
+	background-color: #d7d7d7;
 	padding: 16px 8px;
 	margin: 32px 0 0;
 	height: 198px;
@@ -746,7 +746,9 @@ button:hover{
 	font-weight: bold;
 	font-size: 18px;
 }
-
+.wrap_text_features{
+	margin-bottom: -32px;
+}
 @media (min-width: 640px){
 	.client_block{
 	margin: 16px;
@@ -906,4 +908,7 @@ button:hover{
 	.h2_consulting{
 	float: left;
 		}
+	.wrap_text_features{
+		margin-bottom: -32px;
+	}
 }
