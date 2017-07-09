@@ -758,7 +758,7 @@ button:hover{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 50%;
+	height: 450px;
 	margin: 0 auto
 }
 .stub_main_heading{
@@ -773,7 +773,7 @@ button:hover{
 .wrap_stub{
 	background-color: #ff3333;
 	padding: 64px;
-	height: 70%;
+	height: 550px;
 }
 .wrap_stub .text_consulting_clients{
 	border-top: 1px solid #fff;
