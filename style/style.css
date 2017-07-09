@@ -643,9 +643,6 @@ button:hover{
 	z-index: 2;
 	padding: 16px;
 }
-.text_consulting_clients h2{
-	margin: 16px 16px 0 0;
-}
 .main_btn_clients{
 	margin: 16px auto;
 	font-size: 32px;
@@ -748,6 +745,113 @@ button:hover{
 }
 .wrap_text_features{
 	margin-bottom: -32px;
+}
+.wrap_stub_main{
+	background-color: #f6f4f5;
+}
+.logo_wrap{
+	min-width: 760px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+	margin: 0 auto
+}
+.stub_main_heading{
+	font-weight: lighter;
+	margin: 64px;
+	text-align: center;
+}
+.logo_wrap img{
+	width: 100%;
+	max-width: 320px;
+}
+.wrap_stub{
+	background-color: #ff3333;
+	padding: 64px;
+	height: 70%;
+}
+.wrap_stub .text_consulting_clients{
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	height: 90px;
+	display: flex;
+	align-items: center;
+}
+.h2_consulting_stub{
+	color: #fff;
+}
+.main_btn_stub{
+	background-color: #fff;
+	color: #ff3333;
+	font-size: 24px;
+	height: 46px;
+	vertical-align: middle;
+	margin-left: 24px;
+}
+.main_btn_stub:hover{
+	color: #fff;
+}
+.timer{
+	display: flex;
+	justify-content: center;
+
+}
+.timer_days, .timer_hours, .timer_mins, .timer_secs{
+	color: #fff;
+	font-size: 104px;
+	display: block;
+}
+.timer_days{
+	margin-right: 32px;
+}
+.timer_days:after{
+	content: 'Днів';
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	text-align: right;
+}
+.timer_hours:after{
+	content: 'Годин';
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+}
+.timer_mins:after{
+	content: 'Хвилин';
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	text-align: left;
+}
+.timer_secs:after{
+	content: 'Секунд';
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	text-align: left;
+}
+.timer_hours:before{
+	content: ':';
+	display: block;
+	font-size: 104px;
+	color: #fff;
+	float: right;
+	margin: 0 16px;
+}
+.timer_mins:before{
+	content: ':';
+	display: block;
+	font-size: 104px;
+	color: #fff;
+	float: right;
+	margin: 0 16px;
+}
+.wrap_stub{
+	min-width: 760px;
 }
 @media (min-width: 640px){
 	.client_block{
@@ -897,12 +1001,8 @@ button:hover{
 	.text_consulting_clients span{
 	text-align: left;
 	}
-	.text_consulting_clients h2{
-	margin: 16px 152px 0 0;
-	text-align: left;
-	}
 	.main_btn_clients{
-		margin: 0;
+		margin-left: 144px;
 		float: right;
 	}
 	.h2_consulting{
@@ -910,5 +1010,8 @@ button:hover{
 		}
 	.wrap_text_features{
 		margin-bottom: -32px;
+	}
+	.main_btn_stub{
+		margin-left: 24px;
 	}
 }
