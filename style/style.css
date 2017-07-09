@@ -32,6 +32,15 @@ img{
 	margin: auto;
 	flex-direction: column;
 }
+.sticky_wrap{
+	min-height: 100%;
+	margin-bottom: -106px;
+}
+.sticky_wrap:after{
+	content: '';
+	display: block;
+	height: 106px;
+}
 .logo{
 	display: block;
 	width: 110px;
@@ -331,7 +340,7 @@ video{
 }
 .country_wrap{
 	margin: 16px auto;
-	height: 570px;
+	height: 460px;
 }
 .clients_count{
 	font-size: 60px;
@@ -451,7 +460,7 @@ video{
 .wrap_text_consulting{
 	background-color: #f6f3f0;
 }
-.text_consulting ~ button{
+.main_btn_consulting{
 	font-size: 20px;
 	padding: 16px 32px;
 	margin: 16px auto;
@@ -486,6 +495,7 @@ video{
 	font-size: 14px;
 	padding: 8px 40px 24px 64px;
 	margin: 0 auto;
+	display: block;
 }
 .know_more_btn:hover{
 	border: 1px solid #ccc;
@@ -528,6 +538,7 @@ footer{
 	background-color: #f6f3f0;
 	padding: 16px 8px;
 	margin: 32px 0 0;
+	height: 198px;
 }
 .footer_menu{
 	display: flex;
@@ -589,10 +600,147 @@ footer{
 	border-bottom: 2px solid #ff3333;
 	margin-bottom: -2px;
 }
+.active{
+	border-bottom: 2px solid #ff3333;
+	margin-bottom: -2px;
+
+}
 button:hover{
 	cursor: pointer;
 }
+.clients_search_form{
+	display: flex;
+	justify-content: center;
+}
+.clients_region, .clients_area{
+	margin: 16px 16px 0;
+	height: 31px;
+	width: 248px;
+	background-color: #fff;
 
+}
+.clients_search_form .main_btn{
+	margin: 16px 16px 0;
+}
+.header_clients{
+	border-bottom: 1px solid #000;
+}
+.client_block {
+	text-align: center;
+}
+.wrap_clients:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.clients_text{
+	font-size: 12px;
+	margin: 0;
+}
+.wrap_clients{
+	background-color: #f6f4f5;
+	position: relative;
+	z-index: 2;
+	padding: 16px;
+}
+.text_consulting_clients h2{
+	margin: 16px 16px 0 0;
+}
+.main_btn_clients{
+	margin: 16px auto;
+	font-size: 32px;
+	display: block;
+	width: 266px;
+	height: 88px;
+
+}
+.wrap_text_consulting{
+	background-color: #fff;
+}
+.h2_consulting:after{
+	content: '+ консультації по перенесенню бухгалтерії';
+	display: block;
+	font-size: 12px;
+	text-align: center;
+}
+.text_consulting_clients{
+		margin: 0 auto;
+	}
+.update_block{
+	max-width: 832px;
+	margin: 64px auto;
+	background-color: #f9f8f3;
+	padding: 36px;
+}
+.update_date{
+	float: left;
+}
+.update_block_small p{
+	float: left;
+	max-width: 560px;
+}
+.update_block_small{
+	background-color: #ecebeb;
+}
+.update_block_small:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.main_btn_updates{
+	margin: 0 auto;
+	display: block;
+	font-size: 18px;
+}
+.add_btn{
+	float: right;
+	border-radius: 0;
+	border: 1px solid #000;
+	background-color: initial;
+	width: 55px;
+	height: 55px;
+	font-size: 32px;
+	font-weight: bold;
+}
+.updates_h2{
+	margin: 32px 0 0;
+	text-align: center;
+	font-weight: lighter;
+}
+.next_update{
+	display: flex;
+	justify-content: center;
+}
+.next_update:before{
+	content: 'Наступне заплановане оновлення:';
+	display: block;
+	float: left;
+}
+.functional_ol::before {
+    content: "i";
+    border-radius: 50%;
+    display: block;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.functional_ol {
+    list-style: none;
+}
+
+@media (min-width: 640px){
+	.client_block{
+	margin: 16px;
+	float: left;
+	width: calc(50% - 32px);
+	display: block;
+	}
+}
 @media (min-width: 960px) {
 	header{
 		display: flex;
@@ -702,10 +850,14 @@ button:hover{
 		top: 15%;
 		left: 15%;
 	}
+	.country_wrap{
+		height: 570px;
+	}
 	footer{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		height: 106px;
 	}
 	.footer_menu{
 		justify-content: flex-start;
@@ -723,4 +875,21 @@ button:hover{
 		align-items: flex-start;
 		flex-direction: column;
 	}
+	.client_block{
+	width: calc(33.333% - 32px);
+	}
+	.text_consulting_clients span{
+	text-align: left;
+	}
+	.text_consulting_clients h2{
+	margin: 16px 152px 0 0;
+	text-align: left;
+	}
+	.main_btn_clients{
+		margin: 0;
+		float: right;
+	}
+	.h2_consulting{
+	float: left;
+		}
 }
