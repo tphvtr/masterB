@@ -743,6 +743,9 @@ button:hover{
 	font-weight: bold;
 	font-size: 18px;
 }
+.num_marker{
+	padding:0 8px;
+}
 .wrap_text_features{
 	margin-bottom: -32px;
 }
@@ -750,7 +753,7 @@ button:hover{
 	background-color: #f6f4f5;
 }
 .logo_wrap{
-	min-width: 760px;
+	min-width: 960px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -851,7 +854,10 @@ button:hover{
 	margin: 0 16px;
 }
 .wrap_stub{
-	min-width: 760px;
+	min-width: 960px;
+}
+.wrap_stub_main{
+	min-width: 960px;
 }
 @media (min-width: 640px){
 	.client_block{
