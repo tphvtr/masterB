@@ -50,7 +50,7 @@ img{
 	display: block;
 	background-image: url(../images/logo.png);
 	width: 150px;
-	height: 32px;
+	height: 22px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -84,6 +84,7 @@ img{
 	color: #000;
 	height: 40px;
 	margin: 16px 0;
+	padding:0 8px 0 0;
 	align-self: center;
 	width: 254px;
 	text-align: right;
@@ -185,12 +186,46 @@ video{
 	text-align: center;
 	font-size: 24px;
 	font-weight: lighter;
+	margin-bottom: 56px;
 }
 .features_block{
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+.features_block:hover img{
+	transition: .3s linear all;
+	transform: scale(1.05);
+	cursor: pointer;
+}
+.features_block:hover .img_wrap{
+	transition: .3s linear all;
+	transform: scale(1.05);
+	cursor: pointer;
+	box-shadow: inset 0px 0px 6px 10px rgba(0,0,0,0.39);
+}
+.features_block:hover .blue{
+	box-shadow: inset 0px 0px 6px 10px rgba(0,0,0,0.39);
+}
+.features_block:hover .cyan{
+	box-shadow: inset 0px 0px 6px 10px rgba(0,0,0,0.39);
+}
+.features_block:hover .light_fio{
+	box-shadow: inset 0px 0px 6px 10px rgba(0,0,0,0.39);
+}
+.features_block:hover .fio{
+	box-shadow: inset 0px 0px 6px 10px rgba(0,0,0,0.39);
+}
+.features_block:hover .green{
+	box-shadow: inset 0px 0px 6px 10px rgba(0,0,0,0.39);
+}
+.features_block:hover .red{
+	box-shadow: inset 0px 0px 6px 10px rgba(0,0,0,0.39);
+}
+.more_btn:hover{
+	background-color: #ccc;
+	color: #fff;
 }
 .img_wrap{
 	position: relative;
@@ -265,6 +300,9 @@ video{
 	background-repeat: no-repeat;
 	background-size: 80px;
 	margin: 16px 0;
+}
+.wrap_nav_copyright{
+	margin-left: 16px;
 }
 .wrap_bg_img:before{
 	content: '';
@@ -416,12 +454,19 @@ video{
 	text-align: center;
 	text-transform: uppercase;
 	border: 1px solid #ccc;
-	font-size: 18px;
-	font-weight: lighter;
+	background-color: #ccc;
+	font-size: 14px;
+	font-weight: bold;
 	padding: 8px 24px;
 	position: relative;
 	bottom: -218px;
 	z-index: 2;
+	letter-spacing: 2px;
+	font-stretch: ultra-condensed;
+}
+.buy_btn:hover{
+	background-color: #e1dfdf;
+	color: #fff;
 }
 .tariffs_block_small:after{
 	content: '';
@@ -464,6 +509,7 @@ video{
 	font-size: 20px;
 	padding: 16px 32px;
 	margin: 16px auto;
+	width: 170px;
 }
 .text_consulting h2{
 	font-size: 24px;
@@ -593,8 +639,8 @@ footer{
 	text-transform: none;
 }
 .social_media a:hover{
-	position: relative;
-	top: -2px;
+	margin-top: -4px;
+	transition: linear all .3s;
 }
 .footer_menu li:hover{
 	border-bottom: 2px solid #ff3333;
@@ -687,7 +733,10 @@ button:hover{
 .main_btn_updates{
 	margin: 0 auto;
 	display: block;
-	font-size: 18px;
+	font-size: 20px;
+	padding: 16px 32px;
+	margin: 16px auto;
+	width: 170px;
 }
 .add_btn{
 	float: right;
@@ -698,6 +747,11 @@ button:hover{
 	height: 55px;
 	font-size: 32px;
 	font-weight: bold;
+}
+.add_btn:hover{
+	color: #fff;
+	background-color: #ccc;
+	border-color: #fff;
 }
 .updates_h2{
 	margin: 32px 0 0;
@@ -892,6 +946,15 @@ button:hover{
 		display: flex;
 		align-items: center;
 	}
+	.main_btn_consulting{
+		margin: 16px 0 16px 128px;
+	}
+	.text_consulting span{
+		text-align: left;
+	}
+	.index_h2_consulting{
+		margin-bottom: 0;
+	}
 	.country_choose_wrap{
 		flex-direction: row;
 	}
@@ -950,9 +1013,6 @@ button:hover{
 		display: block;
 		clear: both;
 	}
-	.wrap_text_consulting{
-		margin: 64px 0;
-	}
 	.tariffs_wrap{
 		flex-direction: row;
 	}
@@ -1000,12 +1060,19 @@ button:hover{
 		display: flex;
 		align-items: flex-start;
 		flex-direction: column;
+		margin-right: 16px;
 	}
 	.client_block{
 	width: calc(33.333% - 32px);
 	}
 	.text_consulting_clients span{
 	text-align: left;
+	}
+	.wrap_text_consulting{
+		margin: 64px 0 32px;
+		flex-direction: row;
+		justify-content: center;
+		padding: 32px 0;
 	}
 	.main_btn_clients{
 		margin-left: 144px;
