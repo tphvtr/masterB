@@ -131,7 +131,7 @@ img{
 	font-family: 'Ropa Sans', sans-serif;
 	font-weight: lighter;
 }
-video{
+.main_video{
 	border: 0;
 	margin: 32px auto;
 	width: 100%;
@@ -372,9 +372,6 @@ video{
 }
 .wrap_video{
 	margin: 64px 0;
-}
-.wrap_video video{
-	max-width: 320px;
 }
 .country_wrap{
 	margin: 16px auto;
@@ -1001,7 +998,7 @@ button:hover{
 		margin-top: 156px;
 	}
 	.feedback{
-		margin-bottom: 64px;
+		margin: 16px auto 64px;
 	}
 	.wrap_video video{
 		float: right;
