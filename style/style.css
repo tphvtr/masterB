@@ -10,13 +10,23 @@ body{
 	font-family: arial;
 	margin: 0 auto;
 	min-width: 304px;
-	position: relative;
+	position: absolute;
 }
 a{
 	text-decoration: none;
 }
 img{
 	width: 100%;
+}
+header{
+	position: fixed;
+	z-index: 5;
+	background-color: #fff;
+	width: 100%;
+	margin: auto;
+}
+.bold_text{
+	font-weight: bold;
 }
 .img_map{
 	position: absolute;
@@ -101,7 +111,7 @@ img{
 	float: left;
 }
 .contact:after{
-	content: '+38 044 800 80 08';
+	content: '+38 044 333 444 7';
 	display: block;
 	font-size: 24px;
 }
@@ -128,7 +138,7 @@ img{
 	justify-content: center;
 	height: 160px;
 	color: #fff;
-	background-color: #ff3333;
+	background-color: #cc2229;
 	font-family: 'Ropa Sans', sans-serif;
 	font-weight: lighter;
 }
@@ -162,6 +172,13 @@ img{
 	text-align: center;
 	margin-bottom: 2px;
 }
+.form_heading_demo{
+	font-weight: lighter;
+	text-align: center;
+	margin-bottom: 2px;
+	margin: 16px;
+	color: #fff;
+}
 .search{
 	border: 1px solid #737373;
 	padding: 8px;
@@ -178,6 +195,12 @@ img{
 	border: 0;
 	width: auto;
 	text-transform: uppercase;
+}
+.main_btn_MAIN{
+	margin: 32px auto 32px;
+	display: block;
+	width: 210px;
+	font-size: 20px;
 }
 .functional_features{
 	background-color: #f6f4f5;
@@ -305,6 +328,77 @@ img{
 .wrap_nav_copyright{
 	margin-left: 16px;
 }
+.demo_form {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: calc(30% - 128px);
+  left: calc(50% - 128px);
+  margin: 0 auto;
+  z-index: 7;
+  width: 256px;
+  background-color: #252823;
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
+  padding: 8px;
+  border-radius: 4px; }
+
+textarea {
+  margin: 0 0 8px; }
+
+.btn_place {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  margin: 16px auto 8px;
+  padding: 6px 0;
+  border-radius: 2px;
+  border: 0;
+  display: block;
+  text-align: center;
+  position: relative;
+  background-color: #717171;
+  bottom: 0; }
+
+.btn_place:hover {
+  cursor: pointer;
+  background-color: #616161; }
+
+.modal_close {
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  display: block;
+  color: #fff; }
+.demo_form input {
+	margin: 8px; 
+	border: 0;
+	padding: 4px;
+}
+.demo_form textarea{
+	margin: 8px;
+}
+#map {
+  width: calc(100% - 16px);
+  height: 640px;
+  border: 1px solid #fff;
+  margin: 0 auto; }
+
+#overlay {
+  z-index: 6;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none; }
 .wrap_bg_img:before{
 	content: '';
 	display: block;
@@ -313,8 +407,8 @@ img{
 	height: 65px;
  	position: absolute;
  	background-size: contain;
-		background-repeat: no-repeat;
-		background-position: right;
+	background-repeat: no-repeat;
+	background-position: right;
  	right: 0;
  	top: -4px;
 }
@@ -540,6 +634,7 @@ img{
 	padding: 8px 40px 24px 64px;
 	margin: 0 auto;
 	display: block;
+	text-transform: uppercase;
 }
 .know_more_btn:hover{
 	border: 1px solid #ccc;
@@ -574,6 +669,15 @@ img{
 }
 .answer{
 	font-size: 12px;
+}
+.item{
+	display: none;
+}
+.main_show{
+	display: block;
+}
+.question:hover{
+	cursor: pointer;
 }
 .question{
 	font-size: 15px;
@@ -640,7 +744,7 @@ footer{
 	margin-top: -4px;
 	transition: linear all .3s;
 }
-.footer_menu li:hover{
+/*.footer_menu li:hover{
 	border-bottom: 2px solid #ff3333;
 	margin-bottom: -2px;
 }
@@ -648,7 +752,7 @@ footer{
 	border-bottom: 2px solid #ff3333;
 	margin-bottom: -2px;
 
-}
+}*/
 button:hover{
 	cursor: pointer;
 }
@@ -1085,4 +1189,15 @@ button:hover{
 	.main_btn_stub{
 		margin-left: 24px;
 	}
+}
+@keyframes header_phone{
+	0%{
+	background-image: url('../images/phone.png');
+	}
+	100%{
+	background-image: url('../images/phone_red.png');
+	}
+}
+.contact::before{
+	animation: header_phone .7s infinite;
 }
