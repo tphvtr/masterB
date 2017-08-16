@@ -1321,7 +1321,7 @@ button:hover{
 	}
 	.header_menu{
 		display: flex;
-		width: 110%;
+		width: 11	0%;
 	}
 	.header_menu a{
 		padding: 0 16px;
@@ -1365,7 +1365,7 @@ button:hover{
 		align-self: flex-end;
 	}
 	.features_block{
-		width: 25%;
+		width: 20%;
 		float: left;
 		height: 124px;
 		margin: 32px 0;
