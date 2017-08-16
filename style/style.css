@@ -420,6 +420,9 @@ textarea {
 }
 .finance_wrap h3{
 	font-size: 20px;
+	text-align: center;
+	margin-top: 32px;
+	margin-bottom: 0;
 }
 .finance_wrap h4 {
 	font-size: 14px;
