@@ -93,14 +93,16 @@ header{
 .contact_wrap{
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 .contact{
 	font-size: 12px;
 	color: #000;
-	height: 40px;
+	height: 30px;
 	margin: 0;
 	padding:0 8px 0 0;
-	align-self: center;
+	display: flex;
+	align-items: center;
 	width: 254px;
 	text-align: right;
 }
@@ -110,14 +112,44 @@ header{
 	background-image: url('../images/phone.png');
 	background-size: 100%;
 	background-repeat: no-repeat;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	float: left;
+	margin-left: 4px;
+	margin-right: 16px
 }
 .contact:after{
 	content: '+38 044 333 444 7';
 	display: block;
-	font-size: 24px;
+	font-size: 18px;
+}
+.mail{
+	font-size: 12px;
+	color: #000;
+	height: 30px;
+	margin: 0;
+	padding:0 8px 0 0;
+	width: 254px;
+	text-align: right;
+	display: flex;
+	align-items: center;
+}
+.mail::before{
+	content: '';
+	display: block;
+	background-image: url('../images/mail.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-right: 16px
+}
+.mail:after{
+	content: '';
+	display: block;
+	font-size: 22px;
 }
 .update_list{
 	text-decoration: underline;
@@ -581,7 +613,7 @@ textarea {
   	font-size: 14px;
   	color: #fff;
   	float: left;
-  	background-image: url(../images/Bezsh-17.png);
+  	background-image: url(../images/oport-18.png);
   	background-size: cover;
   	background-repeat: no-repeat;
 }
@@ -1317,7 +1349,12 @@ button:hover{
 		margin: 0 0 0 24px
 	}
 	.contact{
-		margin: 16px 0
+		margin-top: 4px;
+		margin-bottom: 2px;
+	}
+	.mail{
+		margin-top: 2px;
+		margin-bottom: 4px
 	}
 	.contact_wrap{
 		border-left: 1px solid #000;
@@ -1492,4 +1529,15 @@ button:hover{
 }
 .contact::before{
 	animation: header_phone .7s infinite;
+}
+@keyframes header_mail{
+	0%{
+	background-image: url('../images/mail.png');
+	}
+	100%{
+	background-image: url('../images/mail_black.png');
+	}
+}
+.mail::before{
+	animation: header_mail .7s infinite;
 }
