@@ -680,7 +680,7 @@ textarea {
 }
 .tariffs_block{
 	height: 548px;
-	max-width: 248px;
+	max-width: 288px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -693,11 +693,19 @@ textarea {
 	font-weight: bolder;
 	font-size: 65px;
 }
-.tariffs_block span{
+.tariff_span{
 	font-size: 26px;
 }
 .tariffs_block p{
 	font-size: 18px;
+}
+.tariffs_name{
+	color: #f02b32;
+	font-size: 14px
+}
+.cost span {
+	font-size: 14px;
+	font-weight: normal;
 }
 .buy_btn{
 	text-align: center;
@@ -748,8 +756,9 @@ textarea {
 	bottom: -48px;
 }
 .cost{
-	width: 180px;
+	width: 250px;
 	text-align: center;
+	font-weight: bold;
 }
 .wrap_text_consulting{
 	background-color: #f6f3f0;
@@ -1321,6 +1330,9 @@ button:hover{
 }
 .wrap_stub_main{
 	min-width: 960px;
+}
+.tariffs_wrap{
+	margin-top: 64px
 }
 @media (min-width: 640px){
 	.client_block{
